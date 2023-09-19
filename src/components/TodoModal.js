@@ -125,8 +125,8 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
                   value={status}
                   onChange={(e) => setStatus(e.target.value)}
                 >
-                  <option value="incomplete">Waan Qabtay</option>
-                  <option value="complete">Ma Qaban</option>
+                  <option value="incomplete">Ma Qaban</option>
+                  <option value="complete">Waan Qabtay</option>
                 </select>
               </label>
               <div className={styles.buttonContainer}>
@@ -138,7 +138,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
                 </Button>
               </div>
             </form>
-          </motion.div>Wax
+          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>
