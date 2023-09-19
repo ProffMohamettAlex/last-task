@@ -40,7 +40,7 @@ function TodoItem({ todo }) {
 
   const handleDelete = () => {
     dispatch(deleteTodo(todo.id));
-    toast.success('Todo Deleted Successfully');
+    toast.success('Waad Iska Tirtay Howshan');
   };
 
   const handleUpdate = () => {

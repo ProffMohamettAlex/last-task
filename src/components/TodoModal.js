@@ -131,14 +131,14 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
               </label>
               <div className={styles.buttonContainer}>
                 <Button type="submit" variant="primary">
-                  {type === 'add' ? 'Add Task' : 'Update Task'}
+                  {type === 'Kudar' ? 'Kudar Howlaha' : 'Wax Kabadal'}
                 </Button>
                 <Button variant="secondary" onClick={() => setModalOpen(false)}>
                   Kalaabo
                 </Button>
               </div>
             </form>
-          </motion.div>
+          </motion.div>Wax
         </motion.div>
       )}
     </AnimatePresence>
