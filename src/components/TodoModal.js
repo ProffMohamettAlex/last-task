@@ -47,7 +47,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (title === '') {
-      toast.error('Please enter a title');
+      toast.error('Fadlan Gali Howlaha');
       return;
     }
     if (title && status) {
@@ -60,12 +60,12 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
             time: new Date().toLocaleString(),
           })
         );
-        toast.success('Task added successfully');
+        toast.success('Waad ku Dartay Howl Malmedkaga');
       }
       if (type === 'update') {
         if (todo.title !== title || todo.status !== status) {
           dispatch(updateTodo({ ...todo, title, status }));
-          toast.success('Task Updated successfully');
+          toast.success('Waad Badashay Howlmalmedkaga');
         } else {
           toast.error('No changes made');
           return;
@@ -107,10 +107,10 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
 
             <form className={styles.form} onSubmit={(e) => handleSubmit(e)}>
               <h1 className={styles.formTitle}>
-                {type === 'add' ? 'Add' : 'Update'} TODO
+                {type === 'add' ? 'Add' : 'Update'} Howlaha
               </h1>
               <label htmlFor="title">
-                Title
+                Ciwaanka
                 <input
                   type="text"
                   id="title"
@@ -119,14 +119,14 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
                 />
               </label>
               <label htmlFor="type">
-                Status
+                Xaalada
                 <select
                   id="type"
                   value={status}
                   onChange={(e) => setStatus(e.target.value)}
                 >
-                  <option value="incomplete">Incomplete</option>
-                  <option value="complete">Completed</option>
+                  <option value="incomplete">Waan Qabtay</option>
+                  <option value="complete">Ma Qaban</option>
                 </select>
               </label>
               <div className={styles.buttonContainer}>
@@ -134,7 +134,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
                   {type === 'add' ? 'Add Task' : 'Update Task'}
                 </Button>
                 <Button variant="secondary" onClick={() => setModalOpen(false)}>
-                  Cancel
+                  Kalaabo
                 </Button>
               </div>
             </form>

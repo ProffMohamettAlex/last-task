@@ -52,7 +52,7 @@ function AppContent() {
           ))
         ) : (
           <motion.p variants={child} className={styles.emptyText}>
-            Majiraan Wax Hawl Maalmeed Ah
+            Majiran Wax Hawl Malmed Ah
           </motion.p>
         )}
       </AnimatePresence>
